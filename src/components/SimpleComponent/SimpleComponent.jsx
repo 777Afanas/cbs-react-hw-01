@@ -1,8 +1,9 @@
 import { GrReactjs } from "react-icons/gr";
+import css from "./SimpleComponent.module.css"
 
 const SimpleComponent = () => {
   return (
-    <div>
+    <div className={css.container}>
       <div>
         <p>
           React lets you build user interfaces out of individual pieces called
@@ -12,7 +13,7 @@ const SimpleComponent = () => {
         </p>
       </div>
       <div>
-        <GrReactjs size="120" />
+        <GrReactjs className={css.icon} />
       </div>
     </div>
   );
